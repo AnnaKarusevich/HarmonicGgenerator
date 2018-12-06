@@ -1,0 +1,35 @@
+% automatically generated document using lt2circuiTikz
+\documentclass[tikz,margin={2pt 2pt 2pt 2pt}]{standalone}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[compatibility,siunitx,  americanvoltages, americancurrents, europeanresistors, europeaninductors, americanports,%
+  straightlabels, fetbodydiode, straightvoltages]{circuitikz}
+\usepackage{tikz,amsmath, amssymb,bm,color,pgfkeys,siunitx,ifthen,ulem}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.14}
+\usetikzlibrary{shapes,arrows}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+%\usepackage{agaramondc}					% Adobe Garamond, custom shape
+%\renewcommand{\shapedefault}{rtl} % rtl: roman tabular lining
+\begin{document}
+\begin{tikzpicture}
+\draw [draw=black] (0,0) rectangle (4,3) node[pos=0.5,]{$\dot{K}_1(\omega)$};
+\draw [draw=black] (0,-4) rectangle (4,-1) node[pos=0.5,]{$\dot{K}_2(\omega)$};
+\draw (4,1) -- (6,1) -- (6,-2) -- (4,-2);
+\draw (0,1) -- (-2,1) -- (-2,-2) -- (0,-2);
+\draw (4,2) -- (7,2) -- (7,-3) -- (4,-3);
+\draw (-4,1) -- (-3,1) -- (-3,-3) -- (0,-3);
+\draw (0,2) -- (-4,2);
+\draw (7,2) -- (8,2); 
+\node at (7,2) [circle,fill,inner sep=1.5pt]{};
+\draw (6,1) -- (8,1);
+\node at (6,1) [circle,fill,inner sep=1.5pt]{};
+\node at (7,2) [above]{$\dot{U}_{\text{вых}1}$};
+\node at (-3,2) [above]{$\dot{U}_{\text{вх}1}$};
+\node at (6,-1.5) [below,left]{$\dot{U}_{\text{вх}2}$};
+\node at (-2,-1.5) [below,right]{$\dot{U}_{\text{вых}2}$};
+\node at (8,1.5) {$\dot{U}_\text{вых}$};
+\node at (-4,1.5) {$\dot{U}_\text{вх}$};
+\end{tikzpicture}
+\end{document}

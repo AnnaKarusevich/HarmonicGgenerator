@@ -31,7 +31,7 @@
 Любой автогенератор представляет собой нелинейное устройство, преобразующее энергию источника питания (источника постоянного напряжения) в энергию колебаний. При широком разнообразии известных схем автогенераторов каждая из них, помимо источника питания, должна иметь усилитель и цепь обратной связи. Поэтому в обобщенном виде схема автогенератора (см. рис.\ref{fig:fig1}) содержит четырехполюсник в прямой цепи, соответствующий резонансному усилителю, и четырехполюсник в обратной цепи. (Обратите внимание на взаимное расположение входов и выходов четырехполюсников).
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\linewidth]{circuit/one.pdf}
+	\includegraphics[width=0.5\linewidth]{circuit/one.pdf}
 	\caption{}
 	\label{fig:fig1}
 \end{figure}
@@ -45,7 +45,7 @@
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{circuit/2}
+	\includegraphics[width=0.8\linewidth]{circuit/fig2}
 	\caption{}
 	\label{fig:fig2}
 \end{figure}
@@ -64,7 +64,7 @@
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{circuit/two.pdf}
+	\includegraphics[width=0.6\linewidth]{circuit/two.pdf}
 	\caption{}
 	\label{fig:fig3}
 \end{figure}
@@ -151,12 +151,27 @@ S_\text{ср}(U_0)=b_1+\frac{3}{4}b_3U_0^2+\frac{5}{8}b_5U_0^4+\ldots.
 Как следует из \eqref{eq:5}, зависимость $S_\text{ср}(U_0)$ полностью определяется коэффициентом аппроксимирующего полинома $b_{2n+1}$, а сами коэффициенты зависят как от типа электронного прибора и нагрузки, так и от режима его работы.
 
 Чтобы выяснить характер зависимость $S_\text{ср}(U_0)$, рассмотрим рис.\ref{fig:fig4}a, где изображены проходная характеристика транзистора и ее крутизна.
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.4\linewidth]{circuit/4.jpg}
-	\caption{}
-	\label{fig:fig4}
-\end{figure}
+
+\begin{center}
+    \begin{figure}[H]
+        \vspace{-10pt}
+        \begin{minipage}{0.49\linewidth}
+            \includegraphics[width=\linewidth]{circuit/fig4a} 
+            \vspace{-50pt}
+            \label{fig:4a}
+            \captionof{subfigure}{} 
+        \end{minipage}
+    \begin{minipage}{0.49\linewidth}
+        \includegraphics[width=\linewidth]{circuit/fig4b} 
+        \vspace{-50pt}
+        \label{fig:4b}
+        \captionof{subfigure}{} 
+    \end{minipage}
+    \caption{}
+    \vspace{-40pt}
+    \label{fig:4}
+    \end{figure}
+\end{center} 
 
 Различие рисунков \ref{fig:fig4}a и \ref{fig:fig4}б состоит в том, что в первом случае с помощью смещения $E_\text{см}$ рабочая точка выбрана на нелинейном участке проходной характеристики, во втором случае - на линейном, где в окрестности рабочей точки $S\approx\text{const}$. При воздействии на усилитель входного синусоидального напряжения с достаточно большой амплитудой $U_0$ крутизна характеристики описывается периодическими функциями времени $S_1(t)$ и $S_2(t)$, а постоянные составляющие $S'_\text{ср}$ и $S''_\text{ср}$ являются значениями средней крутизны, соответствующими амплитуде $U_0$. Нетрудно заметить, что при увеличении амплитуды входного колебания в случае рис.\ref{fig:fig4}а $S_\text{ср}(U_0)$ будет возрастать, в случае рис.\ref{fig:fig4}б - падать. На рис. \ref{fig:fig5} представлены два характерных вида зависимости $S_\text{ср}(U_0)$, при этом кривая 1 соответствует рис.\ref{fig:fig4}a, кривая 2 - рис.\ref{fig:fig4}б.
 
@@ -164,7 +179,7 @@ S_\text{ср}(U_0)=b_1+\frac{3}{4}b_3U_0^2+\frac{5}{8}b_5U_0^4+\ldots.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.4\linewidth]{circuit/5.jpg}
+	\includegraphics[width=0.4\linewidth]{circuit/fig5}
 	\caption{}
 	\label{fig:fig5}
 \end{figure}
@@ -177,7 +192,7 @@ S_\text{ср}(U_0)=b_1+\frac{3}{4}b_3U_0^2+\frac{5}{8}b_5U_0^4+\ldots.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.4\linewidth]{circuit/6.jpg}
+	\includegraphics[width=0.4\linewidth]{circuit/fig6}
 	\caption{}
 	\label{fig:fig6}
 \end{figure}
@@ -187,7 +202,7 @@ S_\text{ср}(U_0)=b_1+\frac{3}{4}b_3U_0^2+\frac{5}{8}b_5U_0^4+\ldots.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.4\linewidth]{circuit/7.jpg}
+	\includegraphics[width=0.4\linewidth]{circuit/fig7}
 	\caption{}
 	\label{fig:fig7}
 \end{figure}
@@ -235,7 +250,7 @@ K_1(\omega_0)K_2(\omega_0)=1,
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.4\linewidth]{circuit/8.jpg}
+	\includegraphics[width=0.4\linewidth]{circuit/fig8}
 	\caption{}
 	\label{fig:fig8}
 \end{figure}
@@ -250,7 +265,7 @@ K_1(\omega_0)K_2(\omega_0)=1,
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.4\linewidth]{circuit/9.jpg}
+	\includegraphics[width=0.4\linewidth]{circuit/fig9}
 	\caption{}
 	\label{fig:fig9}
 \end{figure}
@@ -259,14 +274,14 @@ K_1(\omega_0)K_2(\omega_0)=1,
 
 \begin{center}
     \begin{minipage}{0.49\linewidth}
-        \includegraphics[width=\linewidth]{circuit/10.jpg} 
+        \includegraphics[width=\linewidth]{circuit/fig10} 
         \label{fig:fig:10}
         \captionof{figure}{} 
     \end{minipage}
 \hfill     
     \begin{minipage}{0.49\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{circuit/11.jpg}  
+        \includegraphics[width=\linewidth]{circuit/fig11}  
         \label{fig:fig:11}
         \captionof{figure}{} 
     \end{minipage} 
@@ -294,7 +309,7 @@ K_1(\omega_0)K_2(\omega_0)=1,
 % \end{wrapfigure}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\linewidth]{circuit/12.jpg}
+	\includegraphics[width=0.7\linewidth]{circuit/fig12}
 	\caption{}
 	\label{fig:fig12}
 \end{figure}
@@ -332,7 +347,7 @@ i_k=i_k(U_\text{б}-DU_k)=C\frac{\operatorname dU_k}{\operatorname dt}+\frac{U_k
 \end{enumerate}
 
 \begin{wrapfigure}{l}{0.4\linewidth}
-\includegraphics[width=\linewidth]{circuit/13.jpg}
+\includegraphics[width=\linewidth]{circuit/fig13}
 \caption{}
 \label{fig:figure13}
 \vspace{-20pt}
@@ -438,7 +453,7 @@ I_1(U_\text{б})=U_\text{б}\frac{1}{RK_2}
 \section{Описание лабораторного макета}
 
 \begin{wrapfigure}{l}{0.4\linewidth}
-\includegraphics[width=\linewidth]{circuit/14.jpg}
+\includegraphics[width=\linewidth]{circuit/fig14}
 \caption{}
 \label{fig:fig14}
 \vspace{-17pt}
@@ -449,7 +464,7 @@ I_1(U_\text{б})=U_\text{б}\frac{1}{RK_2}
 Помимо этого цепочка $R_\text{э}C_\text{э}$ используется для получения дополнительного напряжения смещения, зависящего от уровня генерируемых колебаний. В начальной стадии генерации, когда транзистор еще не вошел в нелинейный режим работы $t\ll t_\text{уст}$, смещение на базе $E_\text{см}$ будет определяться положением движка потенциометра $R_1$. По мере роста колебаний ток эмиттера приобретает форму импульсов с углом отсечки $\theta$, зависящим от уровня напряжения $U_\text{б}$. Причем импульсы тока эмиттера при попадании транзистора в режим насыщения не будут иметь провалов, характерных для тока коллектора. Это связано с тем, что прямое (отпирающее) напряжение на коллекторном переходе уменьшает лишь ток коллектора, в то время как эмиттерный переход как был так и остается в режиме инжекции носителей. Поэтому мы можем считать, что ток эмиттера в стационарном режиме имеет форму импульсов, изображенных на рис.\ref{fig:fig15} с углом отсечки $\theta$. Его постоянная составляющая равна $I_{\text{эo}}$. Протекая через сопротивление $R_\text{э}$ она создает на нем дополнительное падение напряжения: $U_\text{доп}=I_{\text{эo}}R_\text{э}$, величина которого зависит от амплитуды напряжения на базе $U_\text{б}$. Чем больше $U_\text{б}$, тем больше величина $I_{\text{эo}}$ и тем больше значение $U_\text{доп}$. Емкость $C_\text{э}$ отфильтровывает переменную составляющую, т.к. ее импеданс $1/\omega_0 C_\text{э}\ll R_\text{э}$.
 
 \begin{wrapfigure}{l}{0.4\linewidth}
-\includegraphics[width=\linewidth]{circuit/15.jpg}
+\includegraphics[width=\linewidth]{circuit/fig15}
 \caption{}
 \label{fig:fig15}
 \vspace{-20pt}
@@ -504,7 +519,9 @@ I_1(U_\text{б})=U_\text{б}\frac{1}{RK_2}
 		\begin{enumerate}
 				\item Не изменяя частоты внешнего генератора, установить $E_\text{см}=E_\text{см2}$. Для этого 
 			    - переключатель "генератор-усилитель" поставить в положение "генератор";
+
 			    - выполнить пункты i-iv раздела b задания 3 при включенной емкости $C_{\text{э}}$;
+
 			    - установить переключатель "генератор-усилитель" вновь в положение "усилитель"; 
 				\item Изменяя $U_\text{ВХ}$ от 0.01 до 0.3 В, снять зависимости $U_K=U_K(U_\text{ВХ})$ и $U_\text{БЭ}=U_\text{БЭ}(U_\text{ВХ})$. Зафиксировать характерные осциллограммы тока коллектора.
 		\end{enumerate}
@@ -517,5 +534,34 @@ I_1(U_\text{б})=U_\text{б}\frac{1}{RK_2}
 			\item Форму колебаний на выходе наблюдать с помощью осциллографа, подключенного к гнезду $\text{Г}_4$. 
 		\end{enumerate}
 \end{enumerate}
+\section{Контрольные вопросы}
+\begin{enumerate}
+	\item Дать определение следующим понятиям:
 
+	- комплексный коэффициент передачи линейного четырёхполюсника; 
+
+	- амплитудно-частотная и фазо-частотная характеристики четырехполюсника;
+
+	- крутизна вольт-амперной характеристики транзистора;
+
+	- средняя крутизна резонансного усилительного каскада;
+
+	- колебательная характеристика такого каскада.
+	\item Как зависит средняя крутизна от смещения и от амплитуды входного синусоидального колебания?
+	\item Как изменяется вид колебательной характеристики при изменении смещения?
+	\item Как измерить колебательную характеристику?
+	\item В чем заключаются условия самовозбуждения автогенератора?
+	\item Чем определяется амплитуда стационарны колебаний автогенератора?
+	\item При каких условиях колебания автогенератора приобретают стационарный характер?
+	\item Какова форма коллекторного тока в стационарном режиме автогенератора?
+	\item В чем заключается условие стационарности автогенератора?
+	\item Может ли быть стационарное состояние автогенератора неустойчивым?
+	\item Объяснить суть различия между мягким и жестким возбуждением автогенератора.
+\end{enumerate}
+\section{Литература}
+\begin{enumerate}
+	\item Баскаков С.И. Радиотехнические цепи и сигналы.-М.: Высшая школа, 1983.
+	\item Гоноровский И.С. Радиотехнические цепи и сигналы.-М.: Сов.радио, 1986.
+	\item Основы теории колебаний. Под ред. Мигулина В.В.-М: Наука, 1976.
+\end{enumerate}
 \end{document}

@@ -27,18 +27,11 @@
 		graphicx,
 		subcaption,
 		float,
-		tikz,
-		tikz-3dplot,
 		caption,
-		csvsimple,
 		color,
 		booktabs,
 		geometry,
 		% 
-		% Таблицы, списки
-		makecell,
-		multirow,
-		indentfirst,
 		%
 		% Интегралы и прочие обозначения
 		ulem,
@@ -55,7 +48,6 @@
  % Цвета для гиперссылок
 \definecolor{linkcolor}{HTML}{000000} % цвет ссылок
 \definecolor{urlcolor}{HTML}{799B03} % цвет гиперссылок
- 
 \hypersetup{pdfstartview=FitH,linkcolor=linkcolor,urlcolor=urlcolor, colorlinks=true}
 \hypersetup{pageanchor=false}
 % Увеличенный межстрочный интервал, французские пробелы
@@ -63,9 +55,7 @@
 \frenchspacing 
 
 
-% Среднее <#1>
-\newcommand{\mean}[1]{\langle#1\rangle}
-% const прямым шрифтом
+
 \newcommand\ct[1]{\text{\rmfamily\upshape #1}}
 \newcommand*{\const}{\ct{const}}
 \usepackage{array}
@@ -73,8 +63,8 @@
 
 \geometry		
 	{
-		left			=	1cm,
-		right 			=	1cm,
+		left			=	1.5cm,
+		right 			=	1.5cm,
 		top 			=	1.5cm,
 		bottom 			=	1.5cm,
 		bindingoffset	=	0cm
